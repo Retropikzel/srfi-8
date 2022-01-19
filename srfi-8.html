@@ -1,27 +1,22 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//EN">
-<html>
+<html lang="en">
 <head>
   <title>SRFI 8: RECEIVE: Binding to multiple values</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/srfi.css" type="text/css" />
+  <link rel="stylesheet" href="https://srfi.schemers.org/srfi.css" type="text/css" />
+  <link href="/favicon.png" rel="icon" sizes="192x192" type="image/png">
 </head>
 
 <body>
-<H1>Title</H1>
+<h1><a href="https://srfi.schemers.org/"><img class="srfi-logo" src="https://srfi.schemers.org/srfi-logo.svg" alt="SRFI surfboard logo" /></a>8: <code>receive</code>: Binding to multiple values</h1>
 
-<code>receive</code>: Binding to multiple values
-
-<H1>Author</H1>
-
-John David Stone
-
-<p>
+<p>by John David Stone<br />
 Department of Mathematics and Computer Science, Grinnell College, Grinnell, Iowa 50112,
 <a href="mailto:stone@cs.grinnell.edu">email</a>.
 </p>
 
-<H1>Status</H1>
+<h2>Status</h2>
 
 <p>This SRFI is currently in <em>final</em> status.  Here is <a href="https://srfi.schemers.org/srfi-process.html">an explanation</a> of each status that a SRFI can hold.  To provide input on this SRFI, please send email to <code><a href="mailto:srfi+minus+8+at+srfi+dotschemers+dot+org">srfi-8@<span class="antispam">nospam</span>srfi.schemers.org</a></code>.  To subscribe to the list, follow <a href="https://srfi.schemers.org/srfi-list-subscribe.html">these instructions</a>.  You can access previous messages via the mailing list <a href="https://srfi-email.schemers.org/srfi-8">archive</a>.</p>
 <UL>
@@ -30,14 +25,14 @@ Department of Mathematics and Computer Science, Grinnell College, Grinnell, Iowa
 <LI>Final: 1999-08-30
 </UL>
 
-<H1>Related SRFIs</H1>
+<h2>Related SRFIs</h2>
 
 <p>
 The syntax proposed in this SRFI is used in the reference implementation of
 <a href="../srfi-1/">SRFI-1</a>, ``List library.''
 </p>
 
-<H1>Abstract</H1>
+<h2>Abstract</h2>
 
 <p>
 The only mechanism that R<sup>5</sup>RS provides for binding identifiers to
@@ -46,7 +41,7 @@ the values of a multiple-valued expression is the primitive
 readable syntax for creating such bindings.
 </p>
 
-<H1>Rationale</H1>
+<h2>Rationale</h2>
 
 <p>
 Although R<sup>5</sup>RS supports multiple-valued expressions, it provides
@@ -118,7 +113,7 @@ established from a ``body'' in which they are used makes it easier to
 follow the code.
 </p>
 
-<H1 id="receive">Specification</H1>
+<h2 id="receive">Specification</h2>
 
 <p>
 <code>(receive</code> &lt;formals&gt; &lt;expression&gt;
@@ -174,7 +169,7 @@ the extended environment.  The results of the last expression in the body
 are the values of the <code>receive</code>-expression.
 </p>
 
-<H1>Reference implementation</H1>
+<h2>Reference implementation</h2>
 
 <pre>
 <code>
