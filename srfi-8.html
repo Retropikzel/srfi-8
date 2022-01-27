@@ -1,11 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//EN">
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 3.2//EN" "http://www.w3.org/TR/HTML32.dtd">
 <html lang="en">
 <head>
   <title>SRFI 8: RECEIVE: Binding to multiple values</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://srfi.schemers.org/srfi.css" type="text/css" />
-  <link href="/favicon.png" rel="icon" sizes="192x192" type="image/png">
+  <link href="/favicon.png" rel="icon" sizes="192x192" type="image/png" />
 </head>
 
 <body>
@@ -19,11 +19,11 @@ Department of Mathematics and Computer Science, Grinnell College, Grinnell, Iowa
 <h2>Status</h2>
 
 <p>This SRFI is currently in <em>final</em> status.  Here is <a href="https://srfi.schemers.org/srfi-process.html">an explanation</a> of each status that a SRFI can hold.  To provide input on this SRFI, please send email to <code><a href="mailto:srfi+minus+8+at+srfi+dotschemers+dot+org">srfi-8@<span class="antispam">nospam</span>srfi.schemers.org</a></code>.  To subscribe to the list, follow <a href="https://srfi.schemers.org/srfi-list-subscribe.html">these instructions</a>.  You can access previous messages via the mailing list <a href="https://srfi-email.schemers.org/srfi-8">archive</a>.</p>
-<UL>
-<LI>Received: 1999-05-27
-<LI>Draft: 1999-07-01--1999-08-30
-<LI>Final: 1999-08-30
-</UL>
+<ul>
+<li>Received: 1999-05-27
+</li><li>Draft: 1999-07-01--1999-08-30
+</li><li>Final: 1999-08-30
+</li></ul>
 
 <h2>Related SRFIs</h2>
 
@@ -131,7 +131,7 @@ forms:
 <code>(</code>&lt;variable<sub>1</sub>&gt; <code>...</code>
 &lt;variable<sub><i>n</i></sub>&gt;<code>)</code>: The environment in which 
 the <code>receive</code>-expression is evaluated is extended by binding
-</code>&lt;variable<sub>1</sub>&gt;, ...,
+&lt;variable<sub>1</sub>&gt;, ...,
 &lt;variable<sub><i>n</i></sub>&gt; to fresh locations.  The
 &lt;expression&gt; is evaluated, and its values are stored into those
 locations.  (It is an error if &lt;expression&gt; does not have exactly
@@ -151,7 +151,7 @@ stored in the location bound to &lt;variable&gt;.
 &lt;variable<sub><i>n</i></sub>&gt; . &lt;variable<sub><i>n</i> +
 1</sub>&gt;<code>)</code>:  The environment in which 
 the <code>receive</code>-expression is evaluated is extended by binding
-</code>&lt;variable<sub>1</sub>&gt;, ...,
+&lt;variable<sub>1</sub>&gt;, ...,
 &lt;variable<sub><i>n</i> + 1</sub>&gt; to fresh locations.  The
 &lt;expression&gt; is evaluated.  Its first <i>n</i> values are stored into
 the locations bound to &lt;variable<sub>1</sub>&gt; <code>...</code>
@@ -181,7 +181,7 @@ are the values of the <code>receive</code>-expression.
 </code>
 </pre>
 
-<hr>
+<hr />
 
 <p>
 Copyright (C) John David Stone (1999).  All Rights Reserved.
@@ -210,7 +210,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 </p>
 
-<hr>
+<hr />
 
     <address>Editor: <a href="mailto:srfi minus editors at srfi dot schemers dot org">Mike Sperber</a></address>
 
