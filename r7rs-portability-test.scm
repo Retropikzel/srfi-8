@@ -1,5 +1,4 @@
 (import (scheme base)
-        (scheme write)
-        (scheme load))
+        (scheme write))
 
-(load "srfi-8-reference.scm")
+(include "srfi-8-reference.scm")
